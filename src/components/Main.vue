@@ -4,7 +4,6 @@
       <h1 class="md-title">My Title</h1>
     </md-toolbar>
     <div class="main-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, rerum? Error sunt, aperiam dolores, atque expedita molestiae tenetur. Quis eveniet accusamus velit explicabo adipisci reiciendis modi eaque quas, officia excepturi.</p>
       <div class="url-input">
         <form novalidate @submit.stop.prevent="submit">
           <md-input-container>
@@ -24,12 +23,24 @@
 
 <style scoped>
  .url-input {
-   width: 30%;
-   margin: 0 auto;
+   width: 60%;
+   display: flex;
+ }
+
+ .url-input form {
+   width: 100%;
+ }
+
+ .main-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: calc(100vh - 65px);
  }
 
  .wrapper {
-   background:url('../assets/background.jpg') top right no-repeat;
-   background-attachment:fixed;
+   /*background:url('../assets/background.jpg') no-repeat;
+   background-size: cover;*/
+   height: 100vh;
  }
 </style>
