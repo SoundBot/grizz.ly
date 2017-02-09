@@ -1,0 +1,8 @@
+{
+  "hostname": "127.0.0.1",
+  "login": "admin",
+  "password": "admin",
+  "database": "grizzly",
+  "port": 8002,
+  "auth": "digest"
+}
